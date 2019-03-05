@@ -24,7 +24,7 @@ public class TwitterWithState {
 
         final JavaReceiverInputDStream<Status> stream = TwitterUtils.createStream(jsc, auth);
 
-        // create a simpler stream of <user, count>
+        // create a simpler stream of <user, count> for the given language
         final JavaPairDStream<String, Integer> tweetPerUser = null; // IMPLEMENT ME
 
         // transform to a stream of <userTotal, userName> and get the first 20
